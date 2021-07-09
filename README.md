@@ -39,6 +39,16 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+### `npm run storybook`
+
+Start Storybook locally.\
+Once started, you can access the Storybook UI at http://localhost:6006/.
+
+### `npm run build-storybook`
+
+Build and output Storybook as a static web application.\
+The static application is built to a new directory here: `/storybook-static`.
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
