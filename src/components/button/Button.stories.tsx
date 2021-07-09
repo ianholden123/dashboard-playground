@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 import { Button } from './Button';
 
 export default {
-  title: 'Example/Button',
+  title: 'Components - Atoms/Button',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -13,14 +13,26 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
+export const Default = Template.bind({});
+Default.args = {
+  label: 'Button',
+};
+
 export const Primary = Template.bind({});
 Primary.args = {
-  primary: true,
+  mode: 'primary',
   label: 'Button',
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
+  mode: 'secondary',
+  label: 'Button',
+};
+
+export const Tertiary = Template.bind({});
+Tertiary.args = {
+  mode: 'tertiary',
   label: 'Button',
 };
 
