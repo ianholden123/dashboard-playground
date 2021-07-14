@@ -6,7 +6,11 @@ module.exports = {
   'extends': [
     'plugin:react/recommended',
     'plugin:jest-dom/recommended',
+    'plugin:jsx-a11y/recommended',
     'google',
+  ],
+  'ignorePatterns': [
+    'src/components/icons/svg/*.tsx',
   ],
   'parser': '@typescript-eslint/parser',
   'parserOptions': {
@@ -20,6 +24,7 @@ module.exports = {
     'react',
     '@typescript-eslint',
     'jest-dom',
+    'jsx-a11y',
   ],
   'rules': {
     'max-len': ['warn', {

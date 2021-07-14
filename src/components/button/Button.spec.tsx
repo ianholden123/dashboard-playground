@@ -22,6 +22,20 @@ describe('<Button />', () => {
     });
   });
 
+  describe('Component adds the given classes correctly', () => {
+    test('renders a button component with an additional class applied', () => {
+      render(<Button classes="some-class" />);
+      const buttonElement = screen.getByRole('button');
+      expect(buttonElement).toHaveClass('some-class');
+    });
+
+    test('renders a button component with multiple additional classes applied', () => {
+      render(<Button classes="some-class another-class" />);
+      const buttonElement = screen.getByRole('button');
+      expect(buttonElement).toHaveClass('some-class another-class');
+    });
+  });
+
   describe('Component adds the supplied label text correctly', () => {
     test('renders a button component without a given text label', () => {
       render(<Button />);

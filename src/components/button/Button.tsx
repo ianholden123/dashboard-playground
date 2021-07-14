@@ -3,6 +3,7 @@ import './button.css';
 
 interface ButtonProps {
   backgroundColor?: string;
+  classes?: string;
   label?: string;
   mode?: 'primary' | 'secondary' | 'tertiary';
   onClick?: () => void;
@@ -11,16 +12,19 @@ interface ButtonProps {
 
 export const Button = ({
   backgroundColor,
+  classes,
   label = '',
   mode,
   onClick,
   size = 'medium',
 }: ButtonProps) => {
   const modeClass = mode && `button--${mode}`;
+  const sizeClass = size && `button--${size}`;
+  const classNames = ['button', sizeClass, modeClass, classes].join(' ');
 
   return (
     <button
-      className={['button', `button--${size}`, modeClass].join(' ')}
+      className={classNames}
       onClick={onClick}
       style={{ backgroundColor }}
       type="button"

@@ -1,7 +1,26 @@
 :root {
-  --color-primary: #132b4d;
-  --color-secondary: #4eafe5;
-  --color-tertiary: #c3a5e2;
+  --color-primary:        #132b4d;
+  --color-primary-shade:  #0f223e;
+  --color-primary-tint:   #425571;
+  --color-secondary:      #4eafe5;
+  --color-secondary-shade:#3e8cb7;
+  --color-secondary-tint: #71bfea;
+  --color-tertiary:       #c3a5e2;
+  --color-tertiary-shade: #9c84b5;
+  --color-tertiary-tint:  #cfb7e8;
+  --color-white:          #FFFFFF;
+  --color-white-shade:    #e6e6e6;
+  --color-white-tint:     #FFFFFF;
+  --color-black:          #000000;
+  --color-black-shade:    #000000;
+  --color-black-tint:     #1a1a1a;
+
+  --spacer-0-size: 0px;
+  --spacer-1-size: 2px;
+  --spacer-2-size: 5px;
+  --spacer-3-size: 10px;
+  --spacer-4-size: 20px;
+  --spacer-5-size: 50px;
 }
 
 body {
@@ -12,3 +31,39 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*******************************/
+/**** Atomic Utility Styles ****/
+/*******************************/
+
+/* Background Colour */
+.bg-primary   { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-tertiary  { background-color: var(--color-tertiary); }
+
+/* Margins */
+.m-0 { margin: var(--spacer-0-size); }
+.m-1 { margin: var(--spacer-1-size); }
+.m-2 { margin: var(--spacer-2-size); }
+.m-3 { margin: var(--spacer-3-size); }
+.m-4 { margin: var(--spacer-4-size); }
+.m-5 { margin: var(--spacer-5-size); }
+
+.mx-0 { margin-left: var(--spacer-0-size); margin-right: var(--spacer-0-size); }
+.mx-1 { margin-left: var(--spacer-1-size); margin-right: var(--spacer-1-size); }
+.mx-2 { margin-left: var(--spacer-2-size); margin-right: var(--spacer-2-size); }
+.mx-3 { margin-left: var(--spacer-3-size); margin-right: var(--spacer-3-size); }
+.mx-4 { margin-left: var(--spacer-4-size); margin-right: var(--spacer-4-size); }
+.mx-5 { margin-left: var(--spacer-5-size); margin-right: var(--spacer-5-size); }
+
+.my-0 { margin-top: var(--spacer-0-size); margin-bottom: var(--spacer-0-size); }
+.my-1 { margin-top: var(--spacer-1-size); margin-bottom: var(--spacer-1-size); }
+.my-2 { margin-top: var(--spacer-2-size); margin-bottom: var(--spacer-2-size); }
+.my-3 { margin-top: var(--spacer-3-size); margin-bottom: var(--spacer-3-size); }
+.my-4 { margin-top: var(--spacer-4-size); margin-bottom: var(--spacer-4-size); }
+.my-5 { margin-top: var(--spacer-5-size); margin-bottom: var(--spacer-5-size); }
+
+/* Text Align */
+.ta-left    { text-align: left; }
+.ta-right   { text-align: right; }
+.ta-center  { text-align: center; }

@@ -1,0 +1,38 @@
+import { Meta } from '@storybook/addon-docs';
+import Icons from '../../src/components/icons/Icons';
+
+<Meta title="Styles/Icons" />
+
+<style>{`
+  th, td {
+    text-align: center;
+  }
+`}
+</style>
+
+# Icons
+
+<table>
+  <thead>
+    <tr>
+      <th>Icon Name</th>
+      <th>Primary</th>
+      <th>Secondary</th>
+      <th>Tertiary</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Email</td>
+      <td><Icons name="email" size="medium" mode="primary" /></td>
+      <td><Icons name="email" size="medium" mode="secondary" /></td>
+      <td><Icons name="email" size="medium" mode="tertiary" /></td>
+    </tr>
+    <tr>
+      <td>React</td>
+      <td><Icons name="react" size="medium" mode="primary" /></td>
+      <td><Icons name="react" size="medium" mode="secondary" /></td>
+      <td><Icons name="react" size="medium" mode="tertiary" /></td>
+    </tr>
+  </tbody>
+</table>

@@ -3,27 +3,65 @@ import { Meta } from '@storybook/addon-docs';
 <Meta title="Styles/Colours" />
 
 <style>{`
-  .primary { background-color: var(--color-primary); }
-  .secondary { background-color: var(--color-secondary); }
-  .tertiary { background-color: var(--color-tertiary); }
+  .black            { background-color: var(--color-black); }
+  .black-shade      { background-color: var(--color-black-shade); }
+  .black-tint       { background-color: var(--color-black-tint); }
+  .white            { background-color: var(--color-white); }
+  .white-shade      { background-color: var(--color-white-shade); }
+  .white-tint       { background-color: var(--color-white-tint); }
+  .primary          { background-color: var(--color-primary); }
+  .primary-shade    { background-color: var(--color-primary-shade); }
+  .primary-tint     { background-color: var(--color-primary-tint); }
+  .secondary        { background-color: var(--color-secondary); }
+  .secondary-shade  { background-color: var(--color-secondary-shade); }
+  .secondary-tint   { background-color: var(--color-secondary-tint); }
+  .tertiary         { background-color: var(--color-tertiary); }
+  .tertiary-shade   { background-color: var(--color-tertiary-shade); }
+  .tertiary-tint    { background-color: var(--color-tertiary-tint); }
 `}
 </style>
 
 # Colours
 
 <table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Default</th>
+      <th>Shade</th>
+      <th>Tint</th>
+    </tr>
+  </thead>
   <tbody>
     <tr>
-      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="primary"></div></td>
+      <td>Black</td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="black"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="black-shade"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="black-tint"></div></td>
+    </tr>
+    <tr>
+      <td>White</td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="white"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="white-shade"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="white-tint"></div></td>
+    </tr>
+    <tr>
       <td>Primary</td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="primary"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="primary-shade"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="primary-tint"></div></td>
     </tr>
     <tr>
-      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="secondary"></div></td>
       <td>Secondary</td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="secondary"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="secondary-shade"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="secondary-tint"></div></td>
     </tr>
     <tr>
-      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="tertiary"></div></td>
       <td>Tertiary</td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="tertiary"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="tertiary-shade"></div></td>
+      <td><div style={{height: "50px", width: "50px", borderRadius: "100%"}} class="tertiary-tint"></div></td>
     </tr>
   </tbody>
 </table>

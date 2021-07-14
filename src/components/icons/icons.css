@@ -1,0 +1,32 @@
+.icon {
+  stroke: #FFFFFF;
+  display: inline-block;
+}
+
+.icon--tiny svg {
+  width: 15px;
+}
+
+.icon--small svg {
+  width: 25px;
+}
+
+.icon--medium svg {
+  width: 50px;
+}
+
+.icon--large svg {
+  width: 100px;
+}
+
+.icon--primary svg {
+  fill: var(--color-primary);
+}
+
+.icon--secondary svg {
+  fill: var(--color-secondary);
+}
+
+.icon--tertiary svg {
+  fill: var(--color-tertiary);
+}
