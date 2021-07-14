@@ -7,11 +7,11 @@ describe('<Button />', () => {
     render(<Button />);
     const buttonElement = screen.getByRole('button');
     expect(buttonElement).toBeInTheDocument();
-  })
+  });
 
   test('renders a button component with the given text label', () => {
     render(<Button label="Here is my label" />);
     const buttonElement = screen.getByText('Here is my label');
     expect(buttonElement).toBeInTheDocument();
-  })
-})
+  });
+});

@@ -16,7 +16,7 @@ export const Button = ({
   label = '',
   ...props
 }: ButtonProps) => {
-  const modeClass = mode && `button--${mode}`
+  const modeClass = mode && `button--${mode}`;
   return (
     <button
       type="button"
