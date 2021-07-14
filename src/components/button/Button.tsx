@@ -2,27 +2,28 @@ import React from 'react';
 import './button.css';
 
 interface ButtonProps {
-  mode?: 'primary' | 'secondary' | 'tertiary';
   backgroundColor?: string;
-  size?: 'small' | 'medium' | 'large';
   label?: string;
+  mode?: 'primary' | 'secondary' | 'tertiary';
   onClick?: () => void;
+  size?: 'small' | 'medium' | 'large';
 }
 
 export const Button = ({
-  mode,
-  size = 'medium',
   backgroundColor,
   label = '',
-  ...props
+  mode,
+  onClick,
+  size = 'medium',
 }: ButtonProps) => {
   const modeClass = mode && `button--${mode}`;
+
   return (
     <button
-      type="button"
       className={['button', `button--${size}`, modeClass].join(' ')}
+      onClick={onClick}
       style={{ backgroundColor }}
-      {...props}
+      type="button"
     >
       {label}
     </button>
