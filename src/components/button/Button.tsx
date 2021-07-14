@@ -5,7 +5,7 @@ interface ButtonProps {
   mode?: 'primary' | 'secondary' | 'tertiary';
   backgroundColor?: string;
   size?: 'small' | 'medium' | 'large';
-  label: string;
+  label?: string;
   onClick?: () => void;
 }
 
@@ -13,7 +13,7 @@ export const Button = ({
   mode,
   size = 'medium',
   backgroundColor,
-  label,
+  label = '',
   ...props
 }: ButtonProps) => {
   const modeClass = mode && `button--${mode}`
