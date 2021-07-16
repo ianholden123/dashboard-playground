@@ -58,3 +58,11 @@ Once started, you can access the Storybook UI at http://localhost:6006/.
 
 Build and output Storybook as a static web application.\
 The static application is built to a new directory here: `/storybook-static`.
+
+## Screenshots
+
+### Dashboard Playground UI
+![Dashboard Playground Screenshot](assets/screenshot.png)
+
+### Storybook - Component Library
+![Dashboard Playground Storybook Interface](assets/storybook.png)
