@@ -1,0 +1,39 @@
+.side-navigation {
+  --nav-width: 250px;
+  --nav-padding-x: 20px;
+  grid-area: sidebar;
+  height: 0;
+  overflow: hidden;
+  transition: 0.2s;
+  visibility: hidden;
+  width: 100%;
+}
+
+.side-navigation.--open {
+  height: 100%;
+  left: 0;
+  visibility: visible;
+}
+
+.side-navigation__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-navigation__list-item {
+  border-bottom: 1px solid var(--color-primary-tint);
+  padding: 10px var(--nav-padding-x);
+  transition: 0.2s;
+}
+.side-navigation__list-item:hover {
+  background-color: var(--color-primary-tint);
+}
+
+@media only screen and (min-width: 576px) {
+  .side-navigation {
+    height: 100%;
+    transition: none;
+    visibility: visible;
+  }
+}

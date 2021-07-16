@@ -18,9 +18,9 @@ export const Button = ({
   onClick,
   size = 'medium',
 }: ButtonProps) => {
-  const modeClass = mode && `button--${mode}`;
-  const sizeClass = size && `button--${size}`;
-  const classNames = ['button', sizeClass, modeClass, classes].join(' ');
+  const modeClass = mode ? `button__${mode}` : '';
+  const sizeClass = size ? `button__${size}` : '';
+  const classNames = ['button', sizeClass, modeClass, classes].join(' ').trim();
 
   return (
     <button

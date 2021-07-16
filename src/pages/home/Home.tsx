@@ -1,11 +1,20 @@
 import React from 'react';
-import { Header } from '../../components/header/Header';
+import { Layout } from '../../components/layout/Layout';
 
 export const Home = () => {
   return (
-    <>
-      <Header />
-      Some page content
-    </>
+    <Layout>
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+      Some page content Some page content Some page content Some page content Some page content
+    </Layout>
   );
 };

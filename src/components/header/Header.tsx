@@ -2,11 +2,25 @@ import React from 'react';
 import './header.css';
 import Icon from '../icons/Icons';
 import { Button } from '../button/Button';
+import { MenuToggle } from '../menuToggle/MenuToggle';
 
-export const Header = () => {
+interface HeaderProps {
+  isSideMenuOpen?: boolean,
+  setIsSideMenuOpen?: () => void,
+}
+
+export const Header = ({
+  isSideMenuOpen = false,
+  setIsSideMenuOpen,
+}: HeaderProps) => {
   return (
-    <header className="header bg-secondary">
+    <header className="header bg-secondary c-white" data-testid="header">
       <div className="header__brand">
+        {setIsSideMenuOpen ? (
+          <MenuToggle classes="mx-2" isOpen={isSideMenuOpen} onClick={setIsSideMenuOpen} />
+        ): (
+          <></>
+        )}
         <Icon name="React" />
         <span className="mx-2">Dashboard Playground</span>
       </div>

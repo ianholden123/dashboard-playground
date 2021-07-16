@@ -16,47 +16,47 @@
 }
 
 
-.button--primary {
+.button__primary {
   color: white;
   background-color: var(--color-primary);
   border-color: var(--color-primary);
 }
-.button--primary:focus,
-.button--primary:hover,
-.button--primary:active {
+.button__primary:focus,
+.button__primary:hover,
+.button__primary:active {
   background-color: var(--color-primary-shade);
 }
 
-.button--secondary {
+.button__secondary {
   color: white;
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
 }
-.button--secondary:focus,
-.button--secondary:hover,
-.button--secondary:active {
+.button__secondary:focus,
+.button__secondary:hover,
+.button__secondary:active {
   background-color: var(--color-secondary-shade);
 }
 
-.button--tertiary {
+.button__tertiary {
   background-color: var(--color-tertiary);
   border-color: var(--color-tertiary);
 }
-.button--tertiary:focus,
-.button--tertiary:hover,
-.button--tertiary:active {
+.button__tertiary:focus,
+.button__tertiary:hover,
+.button__tertiary:active {
   background-color: var(--color-tertiary-shade);
 }
 
-.button--small {
+.button__small {
   font-size: 12px;
   padding: 10px 16px;
 }
-.button--medium {
+.button__medium {
   font-size: 14px;
   padding: 11px 20px;
 }
-.button--large {
+.button__large {
   font-size: 16px;
   padding: 12px 24px;
 }

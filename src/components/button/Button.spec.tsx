@@ -53,24 +53,24 @@ describe('<Button />', () => {
     test('renders a button component without a mode applied', () => {
       render(<Button />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).not.toHaveClass('button--primary');
-      expect(buttonElement).not.toHaveClass('button--secondary');
-      expect(buttonElement).not.toHaveClass('button--tertiary');
+      expect(buttonElement).not.toHaveClass('button__primary');
+      expect(buttonElement).not.toHaveClass('button__secondary');
+      expect(buttonElement).not.toHaveClass('button__tertiary');
     });
     test('renders a button component with the primary mode applied', () => {
       render(<Button mode="primary" />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).toHaveClass('button--primary');
+      expect(buttonElement).toHaveClass('button__primary');
     });
     test('renders a button component with the secondary mode applied', () => {
       render(<Button mode="secondary" />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).toHaveClass('button--secondary');
+      expect(buttonElement).toHaveClass('button__secondary');
     });
     test('renders a button component with the tertiary mode applied', () => {
       render(<Button mode="tertiary" />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).toHaveClass('button--tertiary');
+      expect(buttonElement).toHaveClass('button__tertiary');
     });
   });
 
@@ -88,24 +88,24 @@ describe('<Button />', () => {
     test('renders a button component without a size applied', () => {
       render(<Button />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).toHaveClass('button--medium');
-      expect(buttonElement).not.toHaveClass('button--small');
-      expect(buttonElement).not.toHaveClass('button--large');
+      expect(buttonElement).toHaveClass('button__medium');
+      expect(buttonElement).not.toHaveClass('button__small');
+      expect(buttonElement).not.toHaveClass('button__large');
     });
     test('renders a button component with the primary mode applied', () => {
       render(<Button size="small" />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).toHaveClass('button--small');
+      expect(buttonElement).toHaveClass('button__small');
     });
     test('renders a button component with the secondary mode applied', () => {
       render(<Button size="medium" />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).toHaveClass('button--medium');
+      expect(buttonElement).toHaveClass('button__medium');
     });
     test('renders a button component with the tertiary mode applied', () => {
       render(<Button size="large" />);
       const buttonElement = screen.getByRole('button');
-      expect(buttonElement).toHaveClass('button--large');
+      expect(buttonElement).toHaveClass('button__large');
     });
   });
 });

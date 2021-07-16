@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+}
+
+.content {
+  grid-area: content;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "sidebar content content content"
+      "footer footer footer footer";
+    grid-template-columns: 250px repeat(3, 1fr);
+    grid-template-rows: auto 1fr auto;
+  }
+}
