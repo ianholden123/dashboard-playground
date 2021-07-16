@@ -1,6 +1,27 @@
-# Getting Started with Create React App
+# Dashboard Playground
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I have built this project to give myself an opportunity to  build a component library using the tech stack described below.
+
+## Tech Stack
+
+| Technology            | Notes |
+| --------------------- | --------------------- |
+| React                 | This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). |
+| TypeScript            | I am using TypeScript with React to enforce strict type checking. |
+| Jest                  | I am using Jest to write unit tests for my components. |
+| React Testing Library | React Testing Library helps me test what the user sees and not the implementation details. |
+| HTML                  | Modern, semantically descriptive markup. |
+| CSS                   | Simple styles.
+| Storybook             | The home for my component library documentation. |
+| ESLint               | I have used a linting template and some custom rules to enforce consistent code style. |
+
+## Getting Started
+
+1. Clone this repository and navigate to this directory in your command line interface.
+1. Install dependencies: `npm install`
+1. Start project locally: `npm start`
+1. Open the project in your browser: http://localhost:3000/
+
 
 ## Available Scripts
 
@@ -37,9 +58,3 @@ Once started, you can access the Storybook UI at http://localhost:6006/.
 
 Build and output Storybook as a static web application.\
 The static application is built to a new directory here: `/storybook-static`.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
