@@ -6,14 +6,15 @@ I have built this project to give myself an opportunity to  build a component li
 
 | Technology            | Notes |
 | --------------------- | --------------------- |
-| React                 | This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). |
-| TypeScript            | I am using TypeScript with React to enforce strict type checking. |
-| Jest                  | I am using Jest to write unit tests for my components. |
-| React Testing Library | React Testing Library helps me test what the user sees and not the implementation details. |
+| CSS                   | Simple styles. |
+| Cypress               | Integration testing. |
+| ESLint                | Linting template to enforce consistent code style. |
 | HTML                  | Modern, semantically descriptive markup. |
-| CSS                   | Simple styles.
-| Storybook             | The home for my component library documentation. |
-| ESLint               | I have used a linting template and some custom rules to enforce consistent code style. |
+| Jest                  | Unit testing for my components. |
+| React                 | This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). |
+| React Testing Library | Test utilities to test what the user sees and not the implementation details. |
+| TypeScript            | Enforcing strict type checking. |
+| Storybook             | Component library documentation. |
 
 ## Getting Started
 
