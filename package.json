@@ -22,6 +22,7 @@
     "test": "react-scripts test",
     "lint": "eslint --ext=ts,tsx,js,jsx .",
     "lint:fix": "eslint --ext=ts,tsx,js,jsx . --fix",
+    "cypress:open": "cypress open",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
@@ -65,8 +66,10 @@
     "@storybook/theming": "^6.3.4",
     "@typescript-eslint/eslint-plugin": "^4.28.3",
     "@typescript-eslint/parser": "^4.28.3",
+    "cypress": "^7.7.0",
     "eslint": "^7.30.0",
     "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^2.11.3",
     "eslint-plugin-jest-dom": "^3.9.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0"
