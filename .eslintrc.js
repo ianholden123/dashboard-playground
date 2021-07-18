@@ -2,12 +2,14 @@ module.exports = {
   'env': {
     'browser': true,
     'es2021': true,
+    'cypress/globals': true,
   },
   'extends': [
-    'plugin:react/recommended',
+    'google',
+    'plugin:cypress/recommended',
     'plugin:jest-dom/recommended',
     'plugin:jsx-a11y/recommended',
-    'google',
+    'plugin:react/recommended',
   ],
   'ignorePatterns': [
     'src/components/icons/svg/*.tsx',
@@ -21,10 +23,11 @@ module.exports = {
     'sourceType': 'module',
   },
   'plugins': [
-    'react',
     '@typescript-eslint',
+    'cypress',
     'jest-dom',
     'jsx-a11y',
+    'react',
   ],
   'rules': {
     'max-len': ['warn', {
