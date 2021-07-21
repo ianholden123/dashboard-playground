@@ -1,0 +1,45 @@
+name: Dashboard Playground CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      
+      - name: Install Packages
+        run: npm install
+      
+      - name: Run E2E tests (Cypress)
+        uses: cypress-io/github-action@v2
+        with:
+          start: "npm run start"
+          wait-on: "http://localhost:3000"
+          config: baseUrl=http://localhost:3000
+
+      - name: Run our unit tests
+        run: |
+          echo Starting unit tests...
+          npm test
+
+      - name: Run build
+        run: |
+          echo Starting build...,
+          npm run build

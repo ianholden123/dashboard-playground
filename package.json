@@ -23,6 +23,7 @@
     "lint": "eslint --ext=ts,tsx,js,jsx .",
     "lint:fix": "eslint --ext=ts,tsx,js,jsx . --fix",
     "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
