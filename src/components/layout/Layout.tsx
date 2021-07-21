@@ -22,8 +22,8 @@ export const Layout = ({
   return (
     <div className="container" data-testid="layout">
       <Header
-        isSideMenuOpen={isSideMenuOpen}
-        setIsSideMenuOpen={() => setIsSideMenuOpen(!isSideMenuOpen)}
+        isMenuToggleOpen={isSideMenuOpen}
+        setIsMenuToggleOpen={() => setIsSideMenuOpen(!isSideMenuOpen)}
       />
       <SideMenu menuItems={menuItems} open={isSideMenuOpen} />
       <main className="content m-4">

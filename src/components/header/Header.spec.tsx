@@ -19,7 +19,7 @@ describe('<Header />', () => {
 
   describe('when we supply a setIsMenuOpen prop', () => {
     test('renders a header component with a menu toggle', () => {
-      render(<Header setIsSideMenuOpen={jest.fn()} />);
+      render(<Header setIsMenuToggleOpen={jest.fn()} />);
       const menuToggleElement = screen.getByTestId('menuToggle');
       expect(menuToggleElement).toBeInTheDocument();
     });
