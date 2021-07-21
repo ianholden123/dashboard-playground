@@ -18,7 +18,7 @@ const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  isSideMenuOpen: true,
+  isMenuToggleOpen: true,
 };
 
 export const WithMenuToggle = Template.bind({});
@@ -29,5 +29,5 @@ WithMenuToggle.parameters = {
 };
 WithMenuToggle.args = {
   ...Default.args,
-  setIsSideMenuOpen: () => {},
+  setIsMenuToggleOpen: () => {},
 };

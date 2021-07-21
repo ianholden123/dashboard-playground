@@ -28,14 +28,13 @@
 }
 
 .button__secondary {
-  color: white;
   background-color: var(--color-secondary);
   border-color: var(--color-secondary);
 }
 .button__secondary:focus,
 .button__secondary:hover,
 .button__secondary:active {
-  background-color: var(--color-secondary-shade);
+  background-color: var(--color-secondary-tint);
 }
 
 .button__tertiary {

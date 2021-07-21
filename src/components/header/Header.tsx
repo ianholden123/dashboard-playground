@@ -5,19 +5,19 @@ import { Button } from '../button/Button';
 import { MenuToggle } from '../menuToggle/MenuToggle';
 
 interface HeaderProps {
-  isSideMenuOpen?: boolean,
-  setIsSideMenuOpen?: () => void,
+  isMenuToggleOpen?: boolean,
+  setIsMenuToggleOpen?: () => void,
 }
 
 export const Header = ({
-  isSideMenuOpen = false,
-  setIsSideMenuOpen,
+  isMenuToggleOpen = false,
+  setIsMenuToggleOpen,
 }: HeaderProps) => {
   return (
-    <header className="header bg-secondary c-white" data-testid="header">
+    <header className="header bg-secondary" data-testid="header">
       <div className="header__brand">
-        {setIsSideMenuOpen ? (
-          <MenuToggle classes="mx-2" isOpen={isSideMenuOpen} onClick={setIsSideMenuOpen} />
+        {setIsMenuToggleOpen ? (
+          <MenuToggle classes="mx-2" isOpen={isMenuToggleOpen} onClick={setIsMenuToggleOpen} />
         ): (
           <></>
         )}

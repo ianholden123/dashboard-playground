@@ -60,6 +60,14 @@ Once started, you can access the Storybook UI at http://localhost:6006/.
 Build and output Storybook as a static web application.\
 The static application is built to a new directory here: `/storybook-static`.
 
+## Storybook
+
+I have used Storybook to help build my component library. Storybook gives you a unique set of tools and utilities to make developing and testing components much easier.
+
+### Accessibility
+
+We have used the [Accessibility addon for Storybook](https://storybook.js.org/addons/@storybook/addon-a11y) to help us identify any accessibility issues in our components markup or design.
+
 ## Screenshots
 
 ### Dashboard Playground UI
