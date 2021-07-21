@@ -13,8 +13,8 @@ I have built this project to give myself an opportunity to  build a component li
 | Jest                  | Unit testing for my components. |
 | React                 | This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). |
 | React Testing Library | Test utilities to test what the user sees and not the implementation details. |
-| TypeScript            | Enforcing strict type checking. |
 | Storybook             | Component library documentation. |
+| TypeScript            | Enforcing strict type checking. |
 
 ## Getting Started
 
@@ -38,7 +38,13 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.
+Runs our unit tests by launching Jest's test runner in the interactive watch mode.
+
+### `npm run cypress:open`
+
+Runs our end-to-end and integration tests using Cypress's interactive test runner.
+
+If you would like to run all Cypress tests without opening the test runner, you can run `npm run cypress:run`.
 
 ### `npm run build`
 
@@ -59,6 +65,13 @@ Once started, you can access the Storybook UI at http://localhost:6006/.
 
 Build and output Storybook as a static web application.\
 The static application is built to a new directory here: `/storybook-static`.
+
+### `npm run lint`
+
+Run ESLint to check for JavaScript errors in our code.
+
+If this script returns errors, we may be able to fix these errors by using `npm run lint:fix`.\
+Some Linting errors may require manual intervention however.
 
 ## Storybook
 
