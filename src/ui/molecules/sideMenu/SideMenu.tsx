@@ -3,12 +3,16 @@ import './sideMenu.css';
 
 interface SideMenuProps {
   classes?: string
-  menuItems: string[]
   open?: boolean
 }
 
+const menuItems = [
+  'Menu Item 1',
+  'Menu Item 2',
+  'Menu Item 3',
+];
+
 export const SideMenu = ({
-  menuItems = [],
   open,
 }: SideMenuProps) => {
   const openClass = open ? '--open' : '';

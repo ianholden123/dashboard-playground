@@ -5,7 +5,7 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { MenuToggle } from './MenuToggle';
 
 export default {
-  title: 'Components - Atoms/Menu Toggle',
+  title: 'Atoms/Menu Toggle',
   component: MenuToggle,
   parameters: {
     viewport: {

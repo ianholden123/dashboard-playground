@@ -19,7 +19,7 @@ interface IconsProps {
   size?: 'tiny' | 'small' | 'medium' | 'large',
 };
 
-const Icons = ({
+export const Icons = ({
   mode = 'primary',
   name,
   size = 'small',
@@ -37,5 +37,3 @@ const Icons = ({
     <></>
   );
 };
-
-export default Icons;

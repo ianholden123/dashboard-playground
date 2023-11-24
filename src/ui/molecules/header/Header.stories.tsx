@@ -5,7 +5,7 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { Header } from './Header';
 
 export default {
-  title: 'Components - Organisms/Header',
+  title: 'Organisms/Header',
   component: Header,
   parameters: {
     viewport: {

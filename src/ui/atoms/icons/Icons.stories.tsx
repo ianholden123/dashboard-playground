@@ -1,9 +1,9 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Icons from './Icons';
+import { Icons } from './Icons';
 
 export default {
-  title: 'Components - Atoms/Icons',
+  title: 'Atoms/Icons',
   component: Icons,
 } as ComponentMeta<typeof Icons>;
 

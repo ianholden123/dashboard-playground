@@ -1,8 +1,8 @@
 import React from 'react';
 import './header.css';
-import Icon from '../icons/Icons';
-import { Button } from '../button/Button';
-import { MenuToggle } from '../menuToggle/MenuToggle';
+import { Icons } from 'ui/atoms/icons';
+import { Button } from 'ui/atoms/button';
+import { MenuToggle } from 'ui/atoms/menuToggle';
 
 interface HeaderProps {
   isMenuToggleOpen?: boolean,
@@ -21,7 +21,7 @@ export const Header = ({
         ): (
           <></>
         )}
-        <Icon name="React" />
+        <Icons name="React" />
         <span className="mx-2">Dashboard Playground</span>
       </div>
       <div className="ta-right">

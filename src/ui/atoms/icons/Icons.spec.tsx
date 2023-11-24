@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Icons from './Icons';
+import { Icons } from './Icons';
 
 describe('<Icons />', () => {
   describe('Icons should render the correct components', () => {
